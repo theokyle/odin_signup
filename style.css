@@ -40,5 +40,61 @@ img {
 }
 
 form {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+h3, .content {
+    padding-left: 30px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px 20px 0px;
+}
+
+input {
+    width: 250px;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+button {
+    background-color: #596D48;
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+.introduction, .submission {
+    background-color: rgb(189, 231, 247);
+    padding: 30px;
+}
+
+.introduction p{
+    text-align: start;
+    font-weight: bold;
+    font-size: 18px;
+    max-width: 75ch;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
 }
